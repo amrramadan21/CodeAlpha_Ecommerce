@@ -68,7 +68,7 @@ nav ul a:hover {
 ================================= */
 
 .hero {
-    min-height: 400px;
+    min-height: 800px;
 
     display: flex;
     justify-content: center;
@@ -78,7 +78,39 @@ nav ul a:hover {
 
     padding: 40px 8%;
 
-    background-color: #ddd;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("./images/background2.jpg");
+
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.hero-subtitle {
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 52px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p:not(.hero-subtitle) {
+    font-size: 18px;
+    margin-bottom: 30px;
 }
 
 .hero-content h1 {
@@ -114,7 +146,9 @@ nav ul a:hover {
 ================================= */
 
 #products {
-    padding: 60px 8%;
+    min-height: 600px;
+
+    padding: 80px 10%;
 }
 
 #products h2 {
@@ -136,16 +170,17 @@ nav ul a:hover {
    Product Card
 ================================= */
 
-.product-card {
-    background-color: white;
+.product-card img {
+    width: 100%;
+    height: 250px;
 
-    padding: 20px;
+    object-fit: contain;
 
-    border-radius: 10px;
+    border-radius: 8px;
 
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
 
-    transition: transform 0.3s;
+    background-color: #f8f8f8;
 }
 
 .product-card:hover {
@@ -233,6 +268,19 @@ footer {
 
 
 @media (max-width: 600px) {
+
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p:not(.hero-subtitle) {
+        font-size: 16px;
+    }
 
     nav {
         flex-direction: column;
