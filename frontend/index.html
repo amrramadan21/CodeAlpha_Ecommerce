@@ -19,7 +19,9 @@
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#products">Products</a></li>
-                <li><a href="#cart">Cart</a></li>
+                <li><a href="#cart">
+                        Cart (<span id="cart-count">0</span>)
+                    </a></li>
                 <li><a href="#login">Login</a></li>
             </ul>
         </nav>
@@ -64,6 +66,22 @@
             <div class="products-container"></div>
 
         </section>
+
+        <!-- Cart Section -->
+        <section id="cart" class="cart-section">
+            <h2>Shopping Cart</h2>
+
+            <div id="cart-items">
+                <p class="empty-cart-message">Your cart is empty.</p>
+            </div>
+
+            <div class="cart-summary">
+                <h3>
+                    Total: $<span id="cart-total">0.00</span>
+                </h3>
+            </div>
+        </section>
+
 
     </main>
 
